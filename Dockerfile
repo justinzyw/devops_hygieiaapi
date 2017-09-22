@@ -4,7 +4,7 @@ ENV jasypt.encryptor.password hygieiasecret
 
 ENV SPRING_DATA_MONGODB_DATABASE hygieia
 
-ENV SPRING_DATA_MONGODB_HOST devops-hygieia
+ENV SPRING_DATA_MONGODB_HOST devops-hygieiadb
 
 ENV SPRING_DATA_MONGODB_PORT 27017
 
