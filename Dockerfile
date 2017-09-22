@@ -1,0 +1,13 @@
+FROM capitalone/hygieia-api:latest
+
+ENV jasypt.encryptor.password hygieiasecret
+
+ENV SPRING_DATA_MONGODB_DATABASE hygieia
+
+ENV SPRING_DATA_MONGODB_HOST devops-hygieia
+
+ENV SPRING_DATA_MONGODB_PORT 27017
+
+ENV SPRING_DATA_MONGODB_USERNAME admin
+
+ENV SPRING_DATA_MONGODB_PASSWORD zaq12wsx
