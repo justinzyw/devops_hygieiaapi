@@ -1,4 +1,5 @@
-FROM capitalone/hygieia-api:latest
+#FROM capitalone/hygieia-api:latest
+FROM pravsingh/hygieia-api:latest
 
 ENV SPRING_DATA_MONGODB_DATABASE hygieia
 
