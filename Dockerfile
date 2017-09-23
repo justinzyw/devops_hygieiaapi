@@ -1,7 +1,5 @@
 FROM capitalone/hygieia-api:latest
 
-ENV jasypt.encryptor.password hygieiasecret
-
 ENV SPRING_DATA_MONGODB_DATABASE hygieia
 
 ENV SPRING_DATA_MONGODB_HOST devops-hygieiadb
@@ -11,3 +9,13 @@ ENV SPRING_DATA_MONGODB_PORT 27017
 ENV SPRING_DATA_MONGODB_USERNAME admin
 
 ENV SPRING_DATA_MONGODB_PASSWORD zaq12wsx
+
+ENV AUTH_AUTHENTICATION_PROVIDERS LDAP
+
+ENV AUTH_LDAP_SERVER_URL ldap://devops-ldap:389
+
+ENV AUTH_LDAP_USER_DN_PATTERN [uid={0},dc=ibm,dc=com]
+
+ENV AUTH_LDAP_BIND_USER cn=admin,dc=ibm,dc=com
+
+ENV AUTH_LDAP_BIND_PASS zaq12wsx
