@@ -1,4 +1,3 @@
-#FROM capitalone/hygieia-api:latest
 FROM pravsingh/hygieia-api:latest
 
 ENV SPRING_DATA_MONGODB_DATABASE hygieia
@@ -13,7 +12,7 @@ ENV SPRING_DATA_MONGODB_PASSWORD zaq12wsx
 
 ENV AUTH_AUTHENTICATION_PROVIDERS LDAP
 
-ENV AUTH_LDAP_SERVER_URL ldap://devops-ldap:389
+ENV AUTH_LDAP_SERVER_URL ldap://devops-ldap:389/dc=ibm,dc=com
 
 ENV AUTH_LDAP_USER_DN_PATTERN uid={0},dc=ibm,dc=com
 
