@@ -1,5 +1,7 @@
 FROM pravsingh/hygieia-api:latest
 
+ENV jasypt.encryptor.password hygieiasecret
+
 ENV SPRING_DATA_MONGODB_DATABASE hygieia
 
 ENV SPRING_DATA_MONGODB_HOST devops-hygieiadb
