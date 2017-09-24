@@ -1,7 +1,5 @@
 FROM pravsingh/hygieia-api:latest
 
-ENV jasypt.encryptor.password hygieiasecret
-
 ENV SPRING_DATA_MONGODB_DATABASE hygieia
 
 ENV SPRING_DATA_MONGODB_HOST devops-hygieiadb
@@ -13,6 +11,10 @@ ENV SPRING_DATA_MONGODB_USERNAME admin
 ENV SPRING_DATA_MONGODB_PASSWORD zaq12wsx
 
 ENV AUTH_AUTHENTICATION_PROVIDERS LDAP
+
+ENV AUTH_SECRET hygieiasecret
+
+ENV AUTH_EXPIRATION_TIME 7200000
 
 ENV AUTH_LDAP_SERVER_URL ldap://devops-ldap:389/dc=ibm,dc=com
 
